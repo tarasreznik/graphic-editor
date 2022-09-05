@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class Shape {
+public abstract class Shape {
+
+    public abstract String getName();
+    protected String showClassName(){
+        return this.getClass().getName();
+    }
 }
