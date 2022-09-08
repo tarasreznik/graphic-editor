@@ -1,3 +1,9 @@
+package com.company.interaction;
+
+import com.company.abstact.Shape;
+import com.company.entities.*;
+import static com.company.utilities.ShowShapeName.showShapeName;
+
 public class ShowFigures {
     public static void main(String[] args) {
         Shape circle = new Circle();
@@ -12,9 +18,5 @@ public class ShowFigures {
         showShapeName(rectangle);
         showShapeName(square);
 
-    }
-
-    private static<T extends Shape> void showShapeName(T t){
-        System.out.println(t.getName());
     }
 }
